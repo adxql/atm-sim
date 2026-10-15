@@ -33,9 +33,13 @@ void deposit() {
     std::cin >> input;
 
     if (input != 0) {
-        balance = balance + input;
+        if (input > 0) {
+            balance = balance + input;
 
-        std::cout << "\nSuccesfully deposit $" << input << " into the account\n\n"; 
+            std::cout << "\nSuccesfully deposit $" << input << " into the account\n\n"; 
+        } else {
+            std::cout << "\nThe amount cannot be negative, Exited...\n\n";
+        }
     } else {
         std::cout << "\nExited\n\n";
     }
@@ -50,11 +54,15 @@ void withdraw() {
 
     if (input != 0) {
         if (input <= balance) {
-            balance = balance - input;
+            if (input > 0) {
+                balance = balance - input;
 
-            std::cout << "\nSuccesfully withdraw $" << input << " into the account\n\n";
+                std::cout << "\nSuccesfully withdraw $" << input << " from the account\n\n";
+            } else {
+                std::cout << "\nThe amount cannot be negative, Exited...\n\n";
+            }
         } else {
-            std::cout << "\nInsufficient balance, Exited...\n\n";
+            std::cout << "insufficient balance, Exited...\n\n";
         }
     } else {
         std::cout << "\nExited\n\n";
