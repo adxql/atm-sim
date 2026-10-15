@@ -5,6 +5,11 @@ A simple ATM simulator to replicate real-life ATM machine functionality
 
 Disclaimer, this is suppose to be an ATM simulation application but do not take this for grant it. This program and repository are meant to be use for self-learning and github development
 
+`v1.1`
+
+## Preview
+![ATM execution](./assets/2026-10-15-200544_hyprshot.png)
+
 ## Dependencies
 - gcc
 
